@@ -1,0 +1,35 @@
+FROM artifactory.hydro.qc.ca/dockerhub-docker-remote/python:3.12.1-slim-bullseye
+
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
+WORKDIR /app
+
+# Installer les dépendances système nécessaires
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Créer le répertoire pour les packages Python installés localement
+RUN mkdir -p /app/lib/python3.12/site-packages
+
+# Copier les packages Python pré-installés depuis l'host
+COPY ./local_packages /app/lib/python3.12/site-packages
+
+# Copier la configuration
+WORKDIR /config
+COPY /config ./
+
+# Copier l'application
+WORKDIR /app
+COPY /src ./
+RUN rm -f /app/*.log /app/*.sh && rm -rf /app/config
+RUN find /app -type d -name  "__pycache__" -exec rm -r {} +
+
+# Ajouter le chemin des packages locaux au PYTHONPATH
+ENV PYTHONPATH="/app/lib/python3.12/site-packages:${PYTHONPATH}"
+
+EXPOSE 80
+
+CMD ["python3", "-u", "./main.py"]
