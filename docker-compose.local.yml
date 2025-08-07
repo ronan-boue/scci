@@ -1,0 +1,75 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRESQL_USERNAME}
+      POSTGRES_PASSWORD: ${POSTGRESQL_PASSWORD}
+      POSTGRES_DB: ${POSTGRESQL_DATABASE}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: scci_mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+  iothub_simulator:
+    build:
+      context: ./iothub_simulator
+      dockerfile: docker/Dockerfile.local
+      args:
+        HTTP_PROXY: "http://proxysg2.hydro.qc.ca:8081"
+        HTTPS_PROXY: "https://proxysg2.hydro.qc.ca:8081"
+    container_name: scci_iothub_simulator
+    ports:
+      - "5671:5671"
+      - "8883:8883"
+      - "443:443"
+    environment:
+      AZURE_IOTHUB_CONNECTION_STRING: ${AZURE_IOTHUB_CONNECTION_STRING}
+
+  synciot:
+    build:
+      context: ./synciot
+      dockerfile: docker/Dockerfile.webapp.local
+    container_name: synciot
+    environment:
+      AZURE_IOTHUB_CONNECTION_STRING: ${AZURE_IOTHUB_CONNECTION_STRING}
+      AZURE_IOTHUB_CONSUMER_GROUP: ${AZURE_IOTHUB_CONSUMER_GROUP}
+      AZURE_POSTGRESQL_HOST: ${AZURE_POSTGRESQL_HOST}
+      AZURE_POSTGRESQL_PORT: 5432
+      AZURE_POSTGRESQL_DATABASE: ${AZURE_POSTGRESQL_DATABASE}
+      AZURE_POSTGRESQL_USERNAME: ${AZURE_POSTGRESQL_USERNAME}
+      AZURE_POSTGRESQL_PASSWORD: ${AZURE_POSTGRESQL_PASSWORD}
+      AZURE_POSTGRESQL_SSLMODE: ${AZURE_POSTGRESQL_SSLMODE}
+      SYNCIOT_CONFIG_FILENAME: ${SYNCIOT_CONFIG_FILENAME}
+    depends_on:
+      - postgres
+      - iothub_simulator
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config/synciot.json:/config/synciot.json
+      - ./synciot/src:/app
+
+  # zeppelin:
+  #   build:
+  #     context: ./zeppelin
+  #     dockerfile: docker/Dockerfile.iotedge.amd64
+  #   container_name: zeppelin
+  #   environment:
+  #     CONFIG_FILENAME: /config/zeppelin.json
+  #   ports:
+  #     - "8001:8001"
+  #   volumes:
+  #     - ./zeppelin:/app
+  #     - ./zeppelin/config:/config
+
+volumes:
+  postgres_data:
