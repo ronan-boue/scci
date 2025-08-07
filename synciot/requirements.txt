@@ -1,0 +1,9 @@
+azure-eventhub==5.15.0
+azure-identity==1.21.0
+azure-keyvault-secrets==4.9.0
+psycopg2-binary==2.9.10
+fastapi
+uvicorn
+jinja2
+python-multipart
+requests

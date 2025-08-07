@@ -1,0 +1,72 @@
+{
+    "iothub": {
+        "connection_string": "",
+        "consumer_group": "synciot",
+        "use_key_vault": false
+    },
+    "postgresql": {
+        "host": "psql-ret-dev-21b6d3.postgres.database.azure.com",
+        "port": 5432,
+        "user": "",
+        "password": "",
+        "database": "ret002_essai",
+        "default_schema": "rci_capteurs",
+        "default_table": "rci_lost",
+        "config_table": "rci_capteurs.rci_config",
+        "config_key": "rci_config",
+        "update_config_interval_sec": 120,
+        "sslmode": "require",
+        "sslrootcert": "",
+        "use_key_vault": false
+    },
+    "key_vault": {
+        "url": "https://coffrercidev01.vault.azure.net/",
+        "iot_hub_secret_name": "synciot-iothub-connection-string",
+        "postgres_user_secret_name": "synciot-postgres-user",
+        "postgres_password_secret_name": "synciot-postgres-password"
+    },
+    "routes": [
+        {
+            "name": "yoko_scci",
+            "filters": [
+                {
+                    "attribute": "type",
+                    "value": "ca.qc.hydro.iot.rci.yoko_scci"
+                }
+            ],
+            "table": "rci_yoko_scci",
+            "action": "insert"
+        },
+        {
+            "name": "yoko_meeb1",
+            "filters": [
+                {
+                    "attribute": "type",
+                    "value": "ca.qc.hydro.iot.rci.yoko_meeb1"
+                }
+            ],
+            "table": "rci_yoko_meeb1",
+            "action": "insert"
+        },
+        {
+            "name": "jace_scci",
+            "filters": [
+                {
+                    "attribute": "type",
+                    "value": "ca.qc.hydro.iot.rci.jace_scci"
+                }
+            ],
+            "table": "rci_jace_scci",
+            "action": "insert"
+        }
+    ],
+    "sync": {
+        "interval": 60,
+        "max_retries": 3,
+        "retry_delay": 5
+    },
+    "logging": {
+        "level": "info",
+        "file": "/var/log/synciot.log"
+    }
+}

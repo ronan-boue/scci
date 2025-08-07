@@ -1,0 +1,1017 @@
+2025-06-26T05:54:12Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-06-26T05:54:12Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-06-26T05:54:12Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-06-26T05:54:12Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Connection string is either blank or malformed.
+2025-06-26T05:54:12Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-06-26T12:28:28Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-06-26T12:28:28Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-06-26T12:28:28Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-06-26T12:28:28Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Connection string is either blank or malformed.
+2025-06-26T12:28:28Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-07T12:36:57Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-07T12:36:57Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-07T12:36:57Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-07T12:36:57Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Connection string is either blank or malformed.
+2025-07-07T12:36:57Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-07T12:43:16Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-07T12:43:16Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-07T12:43:16Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-07T12:43:16Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-07T12:43:16Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-07T12:45:41Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-07T12:45:41Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-07T12:45:41Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-07T12:45:41Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-07T12:45:41Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T13:31:39Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T13:31:39Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T13:31:39Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T13:31:39Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T13:31:39Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T13:35:47Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T13:35:47Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T13:35:47Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T13:35:47Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T13:35:47Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T13:36:18Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T13:36:18Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T13:36:18Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T13:36:18Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T13:36:18Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T13:54:26Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T13:54:26Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T13:54:26Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T13:54:26Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T13:54:26Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T13:57:09Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T13:57:09Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 139 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 147 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T13:57:09Z    INFO [          synciot.py: 175 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T13:57:09Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T13:57:09Z   ERROR [          synciot.py: 100 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T13:57:47Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T13:57:47Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T13:57:47Z   ERROR [          synciot.py: 140 - SyncIoT._update_secrets()] Failed to update IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T13:57:47Z   ERROR [          synciot.py: 168 - SyncIoT._update_secrets()] Failed to update PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T13:57:47Z   ERROR [          synciot.py: 176 - SyncIoT._update_secrets()] Failed to update PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T13:57:47Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to update secrets
+2025-07-08T14:00:55Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:00:55Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:00:55Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:00:55Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T14:00:55Z   ERROR [          synciot.py:  99 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T14:02:02Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:02:02Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 140 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 148 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:02:02Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:02:02Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T14:02:02Z   ERROR [          synciot.py: 101 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T14:02:49Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:02:49Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 140 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 148 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:02:49Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:02:49Z   ERROR [azure_iot_hub_client.py:  51 - IoTHub.init()] Failed to initialize Azure IoT Hub client: Invalid Endpoint on the Connection String.
+2025-07-08T14:02:49Z   ERROR [          synciot.py: 101 - SyncIoT.init()] Failed to initialize IoT Hub client
+2025-07-08T14:19:58Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:19:58Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:19:58Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:19:58Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.26.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:19:58Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.26.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:22:59Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:22:59Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:22:59Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:22:59Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.27.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:22:59Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.27.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:24:32Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:24:32Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:24:32Z    INFO [          synciot.py: 175 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:24:32Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.28.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:24:32Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.28.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:30:09Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:30:09Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:30:09Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:30:09Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.29.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:30:09Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.29.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:31:26Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:31:26Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:31:26Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:31:26Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.30.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:31:26Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.30.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:38:47Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:38:47Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:38:47Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:38:47Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.31.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:38:47Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.31.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:41:31Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:41:31Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:41:31Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:41:31Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:41:31Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:44:15Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:44:15Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:44:15Z    INFO [          synciot.py: 175 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:44:15Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.16.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:44:15Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.16.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:45:45Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:45:45Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 140 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 148 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:45:45Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:45:45Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.32.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:45:45Z   ERROR [          synciot.py: 114 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.32.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:46:23Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:46:23Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 139 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 147 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:46:23Z    INFO [          synciot.py: 175 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:46:23Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.48.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:46:23Z   ERROR [          synciot.py: 113 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.48.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T14:51:21Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:51:21Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 139 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 147 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:51:21Z    INFO [          synciot.py: 175 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:51:21Z   ERROR [          synciot.py: 185 - SyncIoT._update_secrets()] Failed to update PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T14:51:21Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to update secrets
+2025-07-08T14:52:54Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:52:54Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 139 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 147 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:52:54Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:52:54Z   ERROR [          synciot.py: 187 - SyncIoT._update_secrets()] Failed to update PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T14:52:54Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to update secrets
+2025-07-08T14:54:29Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:54:29Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 139 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 147 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:54:29Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T14:54:29Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.112.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T14:54:29Z   ERROR [          synciot.py: 113 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.112.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T14:57:56Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T14:57:56Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T14:57:56Z    INFO [          synciot.py: 182 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T14:57:56Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.128.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T14:57:56Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.128.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:00:41Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:00:41Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:00:41Z    INFO [          synciot.py: 182 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:00:41Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.144.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:00:41Z   ERROR [          synciot.py: 112 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.144.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:03:35Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:03:35Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 140 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 148 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:03:35Z    INFO [          synciot.py: 184 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:03:35Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.160.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:03:35Z   ERROR [          synciot.py: 114 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.160.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:04:23Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:04:23Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:04:23Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:04:23Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.176.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:04:23Z   ERROR [          synciot.py: 115 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.176.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:08:23Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:08:23Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:08:23Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:08:23Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.192.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:08:23Z   ERROR [          synciot.py: 115 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.192.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:09:15Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:09:15Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:09:15Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:09:15Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.208.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:09:15Z   ERROR [          synciot.py: 115 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.208.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:10:08Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:10:08Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:10:08Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:10:08Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.224.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:10:08Z   ERROR [          synciot.py: 115 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.224.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:11:17Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:11:17Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:11:17Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:11:17Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (192.168.240.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:11:17Z   ERROR [          synciot.py: 115 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (192.168.240.2), port 5432 failed: FATAL:  password authentication failed for user "synciot_user"
+
+2025-07-08T15:11:38Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:11:38Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:11:38Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:11:38Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "postgres" (172.18.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T15:11:38Z   ERROR [          synciot.py: 115 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "postgres" (172.18.0.2), port 5432 failed: server does not support SSL, but SSL was required
+
+2025-07-08T15:11:57Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:11:57Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:11:57Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:11:58Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-08T15:11:58Z    INFO [          synciot.py: 425 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-08T15:11:58Z    INFO [          synciot.py: 202 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-08T15:11:58Z    INFO [          synciot.py: 226 - SyncIoT.run()] Starting SyncIoT...
+2025-07-08T15:11:58Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-08T15:11:58Z    INFO [          synciot.py: 234 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-08T15:11:58Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-08T15:11:58Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-08T15:11:58Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-08T15:11:58Z    INFO [          synciot.py: 238 - SyncIoT.run()] Event listening started.
+2025-07-08T15:11:59Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 141 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 149 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 154 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 159 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 164 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 169 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 177 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 185 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:11:59Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-08T15:11:59Z    INFO [          synciot.py: 425 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-08T15:11:59Z    INFO [          synciot.py: 202 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-08T15:11:59Z    INFO [          synciot.py: 226 - SyncIoT.run()] Starting SyncIoT...
+2025-07-08T15:11:59Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-08T15:11:59Z    INFO [          synciot.py: 234 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-08T15:11:59Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-08T15:11:59Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-08T15:11:59Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-08T15:11:59Z    INFO [          synciot.py: 238 - SyncIoT.run()] Event listening started.
+2025-07-08T15:14:11Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:14:11Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:14:11Z    INFO [          synciot.py: 182 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:14:12Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-08T15:14:12Z    INFO [          synciot.py: 422 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-08T15:14:12Z    INFO [          synciot.py: 199 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-08T15:14:12Z    INFO [          synciot.py: 223 - SyncIoT.run()] Starting SyncIoT...
+2025-07-08T15:14:12Z    INFO [          synciot.py: 202 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-08T15:14:12Z    INFO [          synciot.py: 231 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-08T15:14:12Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-08T15:14:12Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-08T15:14:12Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-08T15:14:12Z    INFO [          synciot.py: 235 - SyncIoT.run()] Event listening started.
+2025-07-08T15:14:12Z    INFO [          synciot.py:  91 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-08T15:14:12Z    INFO [          synciot.py: 138 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-08T15:14:12Z    INFO [          synciot.py: 146 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-08T15:14:12Z    INFO [          synciot.py: 151 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-08T15:14:12Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-08T15:14:13Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-08T15:14:13Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-08T15:14:13Z    INFO [          synciot.py: 174 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-08T15:14:13Z    INFO [          synciot.py: 182 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-08T15:14:13Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-08T15:14:13Z    INFO [          synciot.py: 422 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-08T15:14:13Z    INFO [          synciot.py: 199 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-08T15:14:13Z    INFO [          synciot.py: 223 - SyncIoT.run()] Starting SyncIoT...
+2025-07-08T15:14:13Z    INFO [          synciot.py: 202 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-08T15:14:13Z    INFO [          synciot.py: 231 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-08T15:14:13Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-08T15:14:13Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-08T15:14:13Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-08T15:14:13Z    INFO [          synciot.py: 235 - SyncIoT.run()] Event listening started.
+2025-07-08T15:35:52Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:35:52Z   ERROR [          synciot.py:  88 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-08T15:36:46Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:36:46Z   ERROR [          synciot.py:  90 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-08T15:37:41Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:37:41Z   ERROR [          synciot.py:  91 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-08T15:42:15Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:42:15Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-08T15:46:49Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:46:49Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-08T15:49:56Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-08T15:49:56Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-14T13:29:45Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-14T13:29:45Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-14T13:30:00Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-14T13:30:00Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:11:37Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:11:37Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:14:37Z    INFO [          synciot.py:  36 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:14:37Z   ERROR [          synciot.py:  92 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:17:28Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:17:28Z   ERROR [          synciot.py:  93 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:20:39Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:20:39Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:30:39Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:30:39Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:33:02Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:33:02Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:35:21Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:35:21Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:35:57Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:35:57Z   ERROR [          synciot.py:  94 - SyncIoT.init()] Failed to load configuration from ./config/synciot.json
+2025-07-17T03:39:00Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 101 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 148 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 171 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 184 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 192 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T03:39:00Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T03:39:00Z    INFO [          synciot.py: 447 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T03:39:00Z    INFO [          synciot.py: 209 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T03:39:00Z    INFO [          synciot.py: 248 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T03:39:00Z    INFO [          synciot.py: 212 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T03:39:00Z    INFO [          synciot.py: 256 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T03:39:00Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T03:39:00Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T03:39:00Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T03:39:00Z    INFO [          synciot.py: 260 - SyncIoT.run()] Event listening started.
+2025-07-17T03:39:01Z    INFO [          synciot.py: 101 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 148 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 156 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 161 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 166 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 171 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 176 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 184 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T03:39:01Z    INFO [          synciot.py: 192 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T03:39:02Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T03:39:02Z    INFO [          synciot.py: 447 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T03:39:02Z    INFO [          synciot.py: 209 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T03:39:02Z    INFO [          synciot.py: 248 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T03:39:02Z    INFO [          synciot.py: 212 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T03:39:02Z    INFO [          synciot.py: 256 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T03:39:02Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T03:39:02Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T03:39:02Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T03:39:02Z    INFO [          synciot.py: 260 - SyncIoT.run()] Event listening started.
+2025-07-17T03:47:17Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:47:17Z    INFO [          synciot.py:  98 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 145 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 173 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 181 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T03:47:17Z    INFO [          synciot.py: 189 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T03:47:18Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T03:47:18Z    INFO [          synciot.py: 444 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T03:47:18Z    INFO [          synciot.py: 206 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T03:47:18Z    INFO [          synciot.py: 245 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T03:47:18Z    INFO [          synciot.py: 209 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T03:47:18Z    INFO [          synciot.py: 253 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T03:47:18Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T03:47:18Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T03:47:18Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T03:47:18Z    INFO [          synciot.py: 257 - SyncIoT.run()] Event listening started.
+2025-07-17T03:47:19Z    INFO [          synciot.py:  98 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 145 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 173 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 181 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 189 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T03:47:19Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T03:47:19Z    INFO [          synciot.py: 444 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T03:47:19Z    INFO [          synciot.py: 206 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T03:47:19Z    INFO [          synciot.py: 245 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T03:47:19Z    INFO [          synciot.py: 209 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T03:47:19Z    INFO [          synciot.py: 253 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T03:47:20Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T03:47:20Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T03:47:20Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T03:47:20Z    INFO [          synciot.py: 257 - SyncIoT.run()] Event listening started.
+2025-07-17T03:51:22Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T03:51:22Z    INFO [          synciot.py:  98 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 145 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 173 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 181 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 189 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T03:51:22Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T03:51:22Z    INFO [          synciot.py: 444 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 206 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T03:51:22Z    INFO [          synciot.py: 245 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T03:51:22Z    INFO [          synciot.py: 253 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T03:51:22Z    INFO [          synciot.py: 209 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T03:51:22Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T03:51:22Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T03:51:22Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T03:51:22Z    INFO [          synciot.py: 257 - SyncIoT.run()] Event listening started.
+2025-07-17T03:51:23Z    INFO [          synciot.py:  98 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 145 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 153 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 158 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 163 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 168 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 173 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 181 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T03:51:23Z    INFO [          synciot.py: 189 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T03:51:24Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T03:51:24Z    INFO [          synciot.py: 444 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T03:51:24Z    INFO [          synciot.py: 206 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T03:51:24Z    INFO [          synciot.py: 245 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T03:51:24Z    INFO [          synciot.py: 209 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T03:51:24Z    INFO [          synciot.py: 253 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T03:51:24Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T03:51:24Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T03:51:24Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T03:51:24Z    INFO [          synciot.py: 257 - SyncIoT.run()] Event listening started.
+2025-07-17T12:39:52Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T12:39:52Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T12:39:52Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T12:39:52Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T12:39:52Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T12:39:52Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T12:39:52Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T12:39:52Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T12:39:52Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T12:39:52Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T12:39:52Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T12:39:52Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T12:39:53Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T12:39:53Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T12:39:53Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T12:39:53Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T12:39:53Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T12:39:53Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T12:39:53Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T12:39:53Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T12:39:53Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T12:39:53Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T12:39:53Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T12:40:48Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T12:40:48Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T12:40:48Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T12:40:49Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T12:40:49Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T12:40:49Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T12:40:49Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T12:40:49Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T12:40:49Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T12:40:49Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T12:40:49Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T12:40:49Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T12:40:49Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T12:40:50Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T12:40:50Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T12:40:50Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T12:40:50Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T12:40:50Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T12:40:50Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T12:40:50Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T12:40:50Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T12:40:50Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T12:40:50Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T12:40:50Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T12:59:08Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T12:59:08Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T12:59:08Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T12:59:09Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T12:59:09Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T12:59:09Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T12:59:09Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T12:59:09Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T12:59:09Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T12:59:09Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T12:59:09Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T12:59:09Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T12:59:09Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T12:59:10Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T12:59:10Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T12:59:11Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T12:59:11Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T12:59:11Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T12:59:11Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T12:59:11Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T12:59:11Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T12:59:11Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T12:59:11Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T12:59:11Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T12:59:11Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T13:00:27Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T13:00:27Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T13:00:27Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T13:00:28Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T13:00:28Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T13:00:28Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T13:00:28Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T13:00:28Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T13:00:28Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T13:00:28Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T13:00:28Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T13:00:28Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T13:00:28Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T13:00:29Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T13:00:29Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T13:00:29Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T13:00:29Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T13:00:29Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T13:00:29Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T13:00:29Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T13:00:29Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T13:00:29Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T13:00:29Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T13:00:29Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T13:02:19Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T13:02:19Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T13:02:19Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T13:02:20Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T13:02:20Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T13:02:20Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T13:02:20Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T13:02:20Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T13:02:20Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T13:02:20Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T13:02:20Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T13:02:20Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T13:02:20Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T13:02:21Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T13:02:21Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T13:02:21Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T13:02:21Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T13:02:21Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T13:02:21Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T13:02:21Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T13:02:21Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T13:02:21Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T13:02:21Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T13:02:21Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T14:02:13Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-17T14:02:13Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T14:02:13Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T14:02:14Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T14:02:14Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T14:02:14Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T14:02:14Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T14:02:14Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T14:02:14Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T14:02:14Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T14:02:14Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T14:02:14Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T14:02:14Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-17T14:02:15Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-17T14:02:15Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-17T14:02:16Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-07-17T14:02:16Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-07-17T14:02:16Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-07-17T14:02:16Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-07-17T14:02:16Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-07-17T14:02:16Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-07-17T14:02:16Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-07-17T14:02:16Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-07-17T14:02:16Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-07-17T14:02:16Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-07-22T13:27:31Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T13:27:31Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T13:27:31Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-22T13:52:33Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T13:52:33Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T13:52:33Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-22T14:19:13Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T14:19:13Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T14:19:13Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-22T14:21:27Z   ERROR [  postgres_client.py:  51 - Postgres.connect()] Error connecting to PostgreSQL database: connection to server at "psql-ret-dev-21b6d3.postgres.database.azure.com" (10.196.216.30), port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-07-22T14:21:27Z   ERROR [          synciot.py: 118 - SyncIoT.init()] Failed to initialize SyncIoT: connection to server at "psql-ret-dev-21b6d3.postgres.database.azure.com" (10.196.216.30), port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-07-22T18:30:49Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T18:30:49Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T18:30:49Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-22T18:32:38Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T18:32:38Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T18:32:38Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-22T18:45:21Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T18:45:21Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T18:45:21Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-07-22T18:59:54Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-07-22T18:59:54Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-07-22T18:59:54Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-08-04T13:33:07Z    INFO [          synciot.py:  37 - SyncIoT.<module>()] SyncIoT version(1.4.0)
+2025-08-04T13:33:07Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-08-04T13:33:07Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-08-04T13:33:07Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-08-04T13:33:07Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-08-04T13:33:07Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-08-04T13:33:07Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-08-04T13:33:07Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-08-04T13:33:07Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-08-04T13:33:07Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-08-04T13:33:07Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-08-04T13:33:07Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.
+2025-08-04T13:33:08Z    INFO [          synciot.py:  97 - SyncIoT.init()] config_table(rci_capteurs.rci_config) config_key(rci_config) update_config_interval_sec(120)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 144 - SyncIoT._update_secrets()] Updated IoT Hub connection string from environment variable (AZURE_IOTHUB_CONNECTION_STRING)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 152 - SyncIoT._update_secrets()] Updated IoT Hub consumer group from environment variable (AZURE_IOTHUB_CONSUMER_GROUP)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 157 - SyncIoT._update_secrets()] Updated PostgreSQL host from environment variable (AZURE_POSTGRESQL_HOST)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 162 - SyncIoT._update_secrets()] Updated PostgreSQL port from environment variable (AZURE_POSTGRESQL_PORT)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 167 - SyncIoT._update_secrets()] Updated PostgreSQL database from environment variable (AZURE_POSTGRESQL_DATABASE)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 172 - SyncIoT._update_secrets()] Updated PostgreSQL username from environment variable (AZURE_POSTGRESQL_USERNAME)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 180 - SyncIoT._update_secrets()] Updated PostgreSQL password from environment variable (AZURE_POSTGRESQL_PASSWORD)
+2025-08-04T13:33:08Z    INFO [          synciot.py: 188 - SyncIoT._update_secrets()] Updated PostgreSQL sslmode from environment variable (AZURE_POSTGRESQL_SSLMODE)
+2025-08-04T13:33:09Z    INFO [  postgres_client.py: 178 - Postgres.read_config()] Record found: ('rci_config', {'timestamp': 1747368309})
+2025-08-04T13:33:09Z    INFO [          synciot.py: 443 - SyncIoT.load_config_data()] Loaded configuration data({'timestamp': 1747368309}) from PostgreSQL database table(rci_capteurs.rci_config) key(rci_config)
+2025-08-04T13:33:09Z    INFO [          synciot.py: 205 - SyncIoT.start_thread()] Starting SyncIoT thread...
+2025-08-04T13:33:09Z    INFO [          synciot.py: 244 - SyncIoT.run()] Starting SyncIoT...
+2025-08-04T13:33:09Z    INFO [          synciot.py: 208 - SyncIoT.start_thread()] SyncIoT thread started.
+2025-08-04T13:33:09Z    INFO [          synciot.py: 252 - SyncIoT.run()] Starting SyncIoT from position datetime(2025-05-16 04:05:09) epoch(1747368309)
+2025-08-04T13:33:09Z    INFO [azure_iot_hub_client.py:  61 - IoTHub.subscribe_to_events()] Listening for events from Azure IoT Hub with start_position(2025-05-16 04:05:09)
+2025-08-04T13:33:09Z    INFO [azure_iot_hub_client.py:  78 - IoTHub._listen()] Start receive event with start_position(2025-05-16 04:05:09)
+2025-08-04T13:33:09Z    INFO [azure_iot_hub_client.py:  66 - IoTHub.subscribe_to_events()] Event listening started.
+2025-08-04T13:33:09Z    INFO [          synciot.py: 256 - SyncIoT.run()] Event listening started.

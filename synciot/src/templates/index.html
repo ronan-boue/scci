@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<head>
+  <title>SyncIoT</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='bootstrap/css/bootstrap.min.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', path='images/favicon.ico') }}">
+</head>
+<html>
+
+<body>
+  <main>
+    <div class="px-4 py-3 my-2 text-center">
+      <img class="d-block mx-auto mb-4" src="{{ url_for('static', path='images/hq.gif') }}" alt="Azure Logo" />
+      <h1 class="display-6 fw-bold text-primary">Bienvenue dans SyncIoT</h1>
+      <h6 class="text-secondary">Version: {{ synciot_version }}</h6>
+      <br />
+      <br />
+      <h5 class="text-primary">Nombre total de messages depuis le dernier lancement: {{ event_count }}</h5>
+      <h5 class="text-primary">Dernier message reçu: {{ event_time }}</h5>
+    </div>
+  </main>
+</body>
+
+</html>
