@@ -1,0 +1,55 @@
+[+] Running 1/4
+ ✔ Network scci_default             Created                                                                          0.1s 
+ - Container scci_iothub_simulator  Created                                                                          0.1s 
+ - Container postgres               Created                                                                          0.1s 
+ - Container scci_mosquitto         Created                                                                          0.1s 
+ - Container synciot                Created                                                                          0.0s 
+Attaching to postgres, scci_iothub_simulator, scci_mosquitto, synciot
+postgres               |
+postgres               | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres               |
+postgres               | 2025-08-07 09:17:57.917 UTC [1] LOG:  starting PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres               | 2025-08-07 09:17:57.918 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres               | 2025-08-07 09:17:57.918 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres               | 2025-08-07 09:17:57.922 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres               | 2025-08-07 09:17:57.929 UTC [30] LOG:  database system was shut down at 2025-08-04 13:33:16 UTC
+postgres               | 2025-08-07 09:17:57.945 UTC [1] LOG:  database system is ready to accept connections
+scci_mosquitto         | 1754558277: mosquitto version 2.0.22 starting
+scci_mosquitto         | 1754558277: Config loaded from /mosquitto/config/mosquitto.conf.
+scci_mosquitto         | 1754558277: Opening ipv4 listen socket on port 1883.
+scci_mosquitto         | 1754558277: Opening ipv6 listen socket on port 1883.
+scci_mosquitto         | 1754558277: mosquitto version 2.0.22 running
+scci_iothub_simulator  | Traceback (most recent call last):
+scci_iothub_simulator  |   File "/app/simulator.py", line 4, in <module>
+scci_iothub_simulator  |     from azure.identity import DefaultAzureCredential
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/__init__.py", line 10, in <module>      
+scci_iothub_simulator  |     from ._credentials import (
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/_credentials/__init__.py", line 5, in <module>
+scci_iothub_simulator  |     from .authorization_code import AuthorizationCodeCredential
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/_credentials/authorization_code.py", line 9, in <module>
+scci_iothub_simulator  |     from .._internal.aad_client import AadClient
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/_internal/__init__.py", line 5, in <module>
+scci_iothub_simulator  |     from .aad_client import AadClient
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/_internal/aad_client.py", line 11, in <module>
+scci_iothub_simulator  |     from .aad_client_base import AadClientBase
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/_internal/aad_client_base.py", line 20, in <module>
+scci_iothub_simulator  |     from .aadclient_certificate import AadClientCertificate
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/azure/identity/_internal/aadclient_certificate.py", line 7, in <module>
+scci_iothub_simulator  |     from cryptography import x509
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/cryptography/x509/__init__.py", line 7, in <module>    
+scci_iothub_simulator  |     from cryptography.x509 import certificate_transparency, verification
+scci_iothub_simulator  |   File "/app/lib/python3.12/site-packages/cryptography/x509/certificate_transparency.py", line 8, in <module>
+scci_iothub_simulator  |     from cryptography.hazmat.bindings._rust import x509 as rust_x509
+scci_iothub_simulator  | ImportError: cannot import name 'x509' from 'cryptography.hazmat.bindings._rust' (unknown location)
+synciot                | Traceback (most recent call last):
+synciot                |   File "/app/./main.py", line 1, in <module>
+synciot                |     from fastapi import FastAPI, Form, Request, status
+synciot                | ModuleNotFoundError: No module named 'fastapi'
+scci_iothub_simulator exited with code 1
+synciot exited with code 1
+Gracefully stopping... (press Ctrl+C again to force)
+[+] Stopping 4/4
+ ✔ Container synciot                Stopped                                                                          0.0s 
+ ✔ Container scci_mosquitto         Stopped                                                                          0.4s 
+ ✔ Container scci_iothub_simulator  Stopped                                                                          0.0s 
+ ✔ Container postgres               Stopped             
