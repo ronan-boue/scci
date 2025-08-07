@@ -1,0 +1,33 @@
+FROM artifactory.hydro.qc.ca/dockerhub-docker-remote/python:3.12.1-slim-bullseye
+
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
+WORKDIR /app
+
+# Copier le certificat
+COPY cacert-hq-combined.pem /usr/local/share/ca-certificates/proxy.crt
+RUN update-ca-certificates
+
+# Installer les dépendances système nécessaires
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Créer le répertoire pour les packages Python installés localement
+RUN mkdir -p /app/lib/python3.12/site-packages
+
+# Copier les packages Python pré-installés depuis l'host
+# Ces packages seront installés localement avec le script de setup
+COPY ./local_packages /app/lib/python3.12/site-packages
+
+# Copier l'application
+COPY simulator.py /app/simulator.py
+
+# Ajouter le chemin des packages locaux au PYTHONPATH
+ENV PYTHONPATH="/app/lib/python3.12/site-packages:${PYTHONPATH}"
+
+EXPOSE 5671 8883 443
+
+CMD ["python3", "simulator.py"]
