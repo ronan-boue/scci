@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mqtt:
+    image: crrpcdev01.azurecr.io/eclipse-mosquitto
+    container_name: mqtt
+    healthcheck:
+      start_period: 10s
+    volumes:
+      - /var/lib/data/modules/mosquitto/config:/mosquitto/config
+      - /var/lib/data/modules/mosquitto/logs:/mosquitto/log
+      - /var/lib/data/modules/mosquitto/data:/mosquitto/data
+    environment:
+      - TZ=America/Montreal
+      - CONFIG_FILE_PATH=/config/config.yaml
+    ports:
+      - 1883:1883
+    networks:
+      - ibr_network
+
+networks:
+  ibr_network:
+    name: ibr-bridge
+    driver: bridge
+    external: true

@@ -1,0 +1,46 @@
+{
+    "specversion": "1.0",
+    "type": "ca.qc.hydro.iot.test.generic",
+    "time": "2025-05-28T15:33:33Z",
+    "id": "1d07944a-ee4b-453a-b81f-0774b8e4f647",
+    "source": "test generic 3",
+    "subject": "",
+    "datacontenttype": "application/json; charset=utf-8",
+    "dataversion": "1.0",
+    "device_id": "ubuntu-edge-jfg",
+    "data": {
+        "device": {
+            "name": "eGauge78294",
+            "class": "EGaugeClient",
+            "protocol": "modbus",
+            "uuid": "6decfd46-7eab-4598-a916-01904aa2e093",
+            "id": "ubuntu-edge-jfg"
+        },
+        "values": [
+            {
+                "value": 1717515957,
+                "id": "LOCAL-TIME-EPOCH-SEC",
+                "address": 30000,
+                "name": "local timestamp (sec)",
+                "description": "",
+                "unit": "s"
+            },
+            {
+                "value": 29.75,
+                "id": "TEMPERATURE",
+                "address": 30016,
+                "name": "on-board temperature",
+                "description": "",
+                "unit": "°C"
+            },
+            {
+                "value": "2205180276",
+                "id": "SERIAL-NUMBER",
+                "address": 30100,
+                "name": "device serial number",
+                "description": "",
+                "unit": ""
+            }
+        ]
+    }
+}

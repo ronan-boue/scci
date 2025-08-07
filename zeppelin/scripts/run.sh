@@ -1,0 +1,1 @@
+winpty docker run --rm --name zeppelin1 -it --entrypoint bash -p 8000:8000 -v //c/Share:/app/share --env LOGGING_FILENAME=share/PEPC/app.log --env CONFIG_FILENAME='//config/zeppelin-mqtt.json' zeppelin

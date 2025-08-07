@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "specversion": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "datacontenttype": {
+      "type": "string"
+    },
+    "dataversion": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "device": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "class": {
+              "type": "string"
+            },
+            "protocol": {
+              "type": "string"
+            },
+            "uuid": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "class",
+            "protocol",
+            "uuid",
+            "id"
+          ]
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {},
+              "id": {
+                "type": "string"
+              },
+              "address": {
+                "type": "number"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "value",
+              "id",
+              "address",
+              "name",
+              "description",
+              "unit"
+            ]
+          }
+        }
+      },
+      "required": [
+        "device",
+        "values"
+      ]
+    }
+  },
+  "required": [
+    "specversion",
+    "type",
+    "time",
+    "id",
+    "source",
+    "subject",
+    "datacontenttype",
+    "dataversion",
+    "device_id",
+    "data"
+  ]
+}

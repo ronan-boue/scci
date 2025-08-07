@@ -1,0 +1,50 @@
+{
+    "device": {
+        "applicationVersion": 5,
+        "dateCode": "20230630",
+        "friendlyName": "SonOff Temp/Hum",
+        "hardwareVersion": 1,
+        "ieeeAddr": "0x00124b002a56d7b7",
+        "manufacturerID": 0,
+        "manufacturerName": "eWeLink",
+        "model": "SNZB-02",
+        "networkAddress": 1449,
+        "powerSource": "Battery",
+        "type": "EndDevice",
+        "zclVersion": 1
+    },
+    "values": [
+        {
+            "value": 22.68,
+            "id": "TEMPERATURE",
+            "name": "Température",
+            "description": "",
+            "unit": "°C",
+            "value_type": "float"
+        },
+        {
+            "value": 37.64,
+            "id": "HUMIDITE",
+            "name": "Humidité",
+            "description": "",
+            "unit": "%",
+            "value_type": "float"
+        },
+        {
+            "value": 3000,
+            "id": "BATTERIE-VOLTAGE",
+            "name": "Voltage Battery",
+            "description": "",
+            "unit": "mV",
+            "value_type": "int"
+        },
+        {
+            "value": 201,
+            "id": "LINK-QUALITY",
+            "name": "Link Quality",
+            "description": "",
+            "unit": "",
+            "value_type": "uint"
+        }
+    ]
+}

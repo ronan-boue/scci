@@ -1,0 +1,19 @@
+FROM python:3.12.1-slim-bullseye
+
+
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Instructions to build the container
+WORKDIR /config
+COPY /config ./
+# RUN rm -f /config/test-zeppelin.json
+
+WORKDIR /app
+COPY /src ./
+# RUN rm -f /app/*.log /app/t?.sh /app/test_pub.py
+
+# CMD ["python3", "-u", "./zeppelin.py"]
+CMD ["/bin/bash"]

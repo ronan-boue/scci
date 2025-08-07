@@ -1,0 +1,472 @@
+{
+    "EnqueuedTimeUtc": "2024-06-04T15:45:57.5670000Z",
+    "Properties": {},
+    "SystemProperties": {
+        "connectionDeviceId": "pepc-edge-dev-01",
+        "connectionModuleId": "modbus2edge",
+        "connectionAuthMethod": "{\"scope\":\"module\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}",
+        "connectionDeviceGenerationId": "638478527647205452",
+        "contentType": "application/json",
+        "contentEncoding": "utf-8",
+        "enqueuedTime": "2024-06-04T15:45:57.5670000Z"
+    },
+    "Body": {
+        "specversion": "1.0",
+        "type": "ca.qc.hydro.modbus.egauge",
+        "time": "2024-06-04T15:45:57.505883+00:00",
+        "id": "1508c252-1f6a-4534-b63f-ee8f241ea0dd",
+        "source": "pepc-edge-dev-01",
+        "datacontenttype": "application/json; charset=utf-8",
+        "data": {
+            "device": {
+                "name": "eGauge78294",
+                "class": "EGaugeClient",
+                "protocol": "modbus",
+                "uuid": "6decfd46-7eab-4598-a916-01904aa2e093",
+                "id": "pepc-edge-dev-01"
+            },
+            "values": [
+                {
+                    "value": 1717515957,
+                    "id": "LOCAL-TIME-EPOCH-SEC",
+                    "address": 30000,
+                    "name": "local timestamp (sec)",
+                    "description": "",
+                    "unit": "s"
+                },
+                {
+                    "value": 0,
+                    "id": "LOCAL-TIME-EPOCH-US",
+                    "address": 30002,
+                    "name": "local timestamp (μs)",
+                    "description": "",
+                    "unit": "μs"
+                },
+                {
+                    "value": 0,
+                    "id": "FFT-TIME-EPOCH-SEC",
+                    "address": 30004,
+                    "name": "FFT timestamp (sec)",
+                    "description": "",
+                    "unit": "s"
+                },
+                {
+                    "value": 0,
+                    "id": "FFT-TIME-EPOCH-US",
+                    "address": 30006,
+                    "name": "FFT timestamp (μs)",
+                    "description": "",
+                    "unit": "μs"
+                },
+                {
+                    "value": 1717515957,
+                    "id": "REGISTER-TIME-EPOCH-SEC",
+                    "address": 30008,
+                    "name": "register timestamp (sec)",
+                    "description": "",
+                    "unit": "s"
+                },
+                {
+                    "value": 0,
+                    "id": "REGISTER-TIME-EPOCH-US",
+                    "address": 30010,
+                    "name": "register timestamp (μs)",
+                    "description": "",
+                    "unit": "μs"
+                },
+                {
+                    "value": 29.75,
+                    "id": "TEMPERATURE",
+                    "address": 30016,
+                    "name": "on-board temperature",
+                    "description": "",
+                    "unit": "°C"
+                },
+                {
+                    "value": "2205180276",
+                    "id": "SERIAL-NUMBER",
+                    "address": 30100,
+                    "name": "device serial number",
+                    "description": "",
+                    "unit": ""
+                },
+                {
+                    "value": "4.3.2\u0000",
+                    "id": "FIRMWARE-VERSION",
+                    "address": 30116,
+                    "name": "firmware version",
+                    "description": "",
+                    "unit": ""
+                },
+                {
+                    "value": 119.96764373779297,
+                    "id": "L1",
+                    "address": 30500,
+                    "name": "L1",
+                    "description": "RMS voltage",
+                    "unit": "V"
+                },
+                {
+                    "value": 119.11045837402344,
+                    "id": "L2",
+                    "address": 30502,
+                    "name": "L2",
+                    "description": "RMS voltage",
+                    "unit": "V"
+                },
+                {
+                    "value": 239.16644287109375,
+                    "id": "L1-L2",
+                    "address": 30506,
+                    "name": "L1-L2",
+                    "description": "RMS voltage",
+                    "unit": "V"
+                },
+                {
+                    "value": 7.1287641525268555,
+                    "id": "SENSOR-S1",
+                    "address": 32000,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 16.98466682434082,
+                    "id": "SENSOR-S2",
+                    "address": 32002,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.04923587664961815,
+                    "id": "SENSOR-S3",
+                    "address": 32004,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.05008801072835922,
+                    "id": "SENSOR-S4",
+                    "address": 32006,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.1047903448343277,
+                    "id": "SENSOR-S5",
+                    "address": 32008,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.3431026339530945,
+                    "id": "SENSOR-S6",
+                    "address": 32010,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.11646414548158646,
+                    "id": "SENSOR-S7",
+                    "address": 32012,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.09814827144145966,
+                    "id": "SENSOR-S8",
+                    "address": 32014,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.04573122411966324,
+                    "id": "SENSOR-S9",
+                    "address": 32016,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.04621375352144241,
+                    "id": "SENSOR-S10",
+                    "address": 32018,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.051210563629865646,
+                    "id": "SENSOR-S11",
+                    "address": 32020,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.11958332359790802,
+                    "id": "SENSOR-S12",
+                    "address": 32022,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.25184518098831177,
+                    "id": "SENSOR-S13",
+                    "address": 32024,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.9229660630226135,
+                    "id": "SENSOR-S14",
+                    "address": 32026,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 0.11957678198814392,
+                    "id": "SENSOR-S15",
+                    "address": 32028,
+                    "name": "",
+                    "description": "normal sensor value",
+                    "unit": "A"
+                },
+                {
+                    "value": 4583.088928888889,
+                    "id": "",
+                    "address": 38000,
+                    "name": "P total résidence",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": -56.530028333333334,
+                    "id": "",
+                    "address": 38004,
+                    "name": "thermopompe piscine et cabanon",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 19.145115555555556,
+                    "id": "",
+                    "address": 38008,
+                    "name": "Cuisinière",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 27.878695277777776,
+                    "id": "",
+                    "address": 38012,
+                    "name": "Sécheuse",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 67.65126638888889,
+                    "id": "",
+                    "address": 38016,
+                    "name": "Ch coté sud et sdb sous-sol",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 6.800778888888889,
+                    "id": "",
+                    "address": 38020,
+                    "name": "Ch séjour",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 6.162780555555556,
+                    "id": "",
+                    "address": 38024,
+                    "name": "Ch cave",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 47.60786083333333,
+                    "id": "",
+                    "address": 38028,
+                    "name": "Therm evap entretoit",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 249.30374333333333,
+                    "id": "",
+                    "address": 38032,
+                    "name": "therm evap REZ",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 30.61144138888889,
+                    "id": "",
+                    "address": 38036,
+                    "name": "Chauff plancher cuisine",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 646.2183169444445,
+                    "id": "",
+                    "address": 38040,
+                    "name": "Chauffe-eau",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": -83.36102277777778,
+                    "id": "",
+                    "address": 38044,
+                    "name": "Borne Flo",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 10.791264166666666,
+                    "id": "",
+                    "address": 38048,
+                    "name": "Chauff ch2 et sdb",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 19.118747777777777,
+                    "id": "",
+                    "address": 38052,
+                    "name": "Réfrigérateur",
+                    "description": "cumulative value",
+                    "unit": "kWh"
+                },
+                {
+                    "value": 2792.0,
+                    "id": "",
+                    "address": 39000,
+                    "name": "P total résidence",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": -110.0,
+                    "id": "",
+                    "address": 39002,
+                    "name": "thermopompe piscine et cabanon",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 3.0,
+                    "id": "",
+                    "address": 39004,
+                    "name": "Cuisinière",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 0.0,
+                    "id": "",
+                    "address": 39006,
+                    "name": "Sécheuse",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 0.0,
+                    "id": "",
+                    "address": 39008,
+                    "name": "Ch coté sud et sdb sous-sol",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 6.0,
+                    "id": "",
+                    "address": 39010,
+                    "name": "Ch séjour",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 5.0,
+                    "id": "",
+                    "address": 39012,
+                    "name": "Ch cave",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 12.0,
+                    "id": "",
+                    "address": 39014,
+                    "name": "Therm evap entretoit",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 1.0,
+                    "id": "",
+                    "address": 39016,
+                    "name": "therm evap REZ",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 1.0,
+                    "id": "",
+                    "address": 39018,
+                    "name": "Chauff plancher cuisine",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 1.0,
+                    "id": "",
+                    "address": 39020,
+                    "name": "Chauffe-eau",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": -15.0,
+                    "id": "",
+                    "address": 39022,
+                    "name": "Borne Flo",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": 8.0,
+                    "id": "",
+                    "address": 39024,
+                    "name": "Chauff ch2 et sdb",
+                    "description": "change in value",
+                    "unit": "W"
+                },
+                {
+                    "value": -9.0,
+                    "id": "",
+                    "address": 39026,
+                    "name": "Réfrigérateur",
+                    "description": "change in value",
+                    "unit": "W"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,162 @@
+{
+    "version": "0.2",
+    "version_date": "2024-10-03",
+    "main_thread_interval_sec": 0.1,
+    "pipelines": [
+        {
+            "name": "generic",
+            "class": "generic",
+            "json_schema": "../../config/test/test-zeppelin-generic-schema-1.json",
+            "config": "",
+            "apply_global_validation_rules": false,
+            "validation_rules": {},
+            "populate_ce_attributes": [
+                "type",
+                "time",
+                "source",
+                "subject",
+                "datacontenttype",
+                "dataversion",
+                "device_id",
+                "dataversion"
+            ],
+            "data_types": [
+                "ca.qc.hydro.iot.test.generic"
+            ],
+            "max_payload_size_bytes": 65536,
+            "thread_interval_sec": 0.1,
+            "source_broker": {
+                "class": "mqtt",
+                "topic": "generic-in",
+                "mqtt": {
+                    "host": "127.0.0.1",
+                    "port": 1883,
+                    "id": "zeppelin_gen_src",
+                    "username": "rci_user",
+                    "password": "rci_password",
+                    "keepalive": 60,
+                    "qos": 1
+                },
+                "throttle_max_message_sec": 20,
+                "throttle_sleep_sec": 1.0
+            },
+            "destination_broker": {
+                "class": "mqtt",
+                "topic": "generic-out",
+                "mqtt": {
+                    "host": "127.0.0.1",
+                    "port": 1883,
+                    "id": "zeppelin_gen_dst",
+                    "username": "rci_user",
+                    "password": "rci_password",
+                    "keepalive": 60,
+                    "qos": 1
+                }
+            },
+            "cloud_event": {
+                "specversion": "1.0",
+                "type": "ca.qc.hydro.iot.test.generic",
+                "time": "2025-05-20T13:33:33Z",
+                "id": "1d07944a-ee4b-453a-b81f-0774b8e4f647",
+                "source": "",
+                "subject": "",
+                "datacontenttype": "application/json; charset=utf-8",
+                "dataversion": "1.0",
+                "data": {}
+            }
+        }
+    ],
+    "global_validation_rules": {
+        "units": [
+            "kwh",
+            "w",
+            "v",
+            "mv",
+            "a",
+            "vh",
+            "kw",
+            "hz",
+            "va",
+            "hpa",
+            "μs",
+            "s",
+            "sec",
+            "min",
+            "hour",
+            "day",
+            "month",
+            "year",
+            "°c",
+            "%",
+            "lqi",
+            "lx"
+        ],
+        "values": [
+            {
+                "type": "unit",
+                "name": "second",
+                "units": [
+                    "s"
+                ],
+                "min": 0,
+                "max": null
+            },
+            {
+                "type": "unit",
+                "name": "micro-second",
+                "units": [
+                    "us",
+                    "μs"
+                ],
+                "min": 0,
+                "max": null
+            },
+            {
+                "type": "unit",
+                "name": "temperature-celsius",
+                "units": [
+                    "C",
+                    "°C"
+                ],
+                "min": -100,
+                "max": 100
+            },
+            {
+                "type": "unit",
+                "name": "volt",
+                "units": [
+                    "V"
+                ],
+                "min": 0,
+                "max": 300
+            },
+            {
+                "type": "unit",
+                "name": "amp",
+                "units": [
+                    "A"
+                ],
+                "min": 0,
+                "max": 200
+            },
+            {
+                "type": "unit",
+                "name": "cumulative-watt-hour",
+                "units": [
+                    "kwh"
+                ],
+                "min": 0,
+                "max": null
+            },
+            {
+                "type": "unit",
+                "name": "watt",
+                "units": [
+                    "w"
+                ],
+                "min": 0,
+                "max": 100
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "specversion": "1.0",
+    "type": "ca.qc.hydro.ibr.gdp",
+    "time": "2024-12-19T10:45:57.505883+00:00",
+    "id": "2345c252-1f6a-4534-b63f-ee8f241ea0dd",
+    "source": "fnappjqy2el2gnh2xk.azurewebsites.net",
+    "datacontenttype": "application/json; charset=utf-8",
+    "dataversion": "1.0",
+    "dest_topic": "c2d-gdp",
+    "data": {
+        "Fields": {
+            "2024/02/19": {
+                "AM": {
+                    "Start": "06h00",
+                    "Duration": "3"
+                }
+            },
+            "2024/02/20": {
+                "AM": {
+                    "Start": "06h00",
+                    "Duration": "3"
+                }
+            }
+        }
+    }
+}

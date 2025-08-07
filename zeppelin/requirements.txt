@@ -1,0 +1,5 @@
+azure-iot-device==2.14.0
+prometheus-client==0.21.0
+jsonschema==4.22.0
+paho-mqtt==1.6.1
+azure-iot-hub==2.6.1

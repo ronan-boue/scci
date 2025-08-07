@@ -1,0 +1,43 @@
+{
+    "EnqueuedTimeUtc": "2024-06-04T15:46:12.5750000Z",
+    "Properties": {},
+    "SystemProperties": {
+        "connectionDeviceId": "pepc-edge-dev-01",
+        "connectionModuleId": "mosqui2edge",
+        "connectionAuthMethod": "{\"scope\":\"module\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}",
+        "connectionDeviceGenerationId": "638481829459048879",
+        "contentType": "application/json",
+        "contentEncoding": "utf-8",
+        "enqueuedTime": "2024-06-04T15:46:12.5750000Z"
+    },
+    "Body": {
+        "specversion": "1.0",
+        "type": "ca.qc.hydro.zigbee2mqtt",
+        "time": "2024-06-04T15:46:12.554216+00:00",
+        "id": "2c458eea-b2c2-489d-976a-9ef6ec3bea66",
+        "source": "pepc-edge-dev-01",
+        "subject": "SNZB-02",
+        "datacontenttype": "application/json; charset=utf-8",
+        "data": {
+            "battery": 100,
+            "device": {
+                "applicationVersion": 5,
+                "dateCode": "20230630",
+                "friendlyName": "SonOff Temp/Hum",
+                "hardwareVersion": 1,
+                "ieeeAddr": "0x00124b002a56d7b7",
+                "manufacturerID": 0,
+                "manufacturerName": "eWeLink",
+                "model": "SNZB-02",
+                "networkAddress": 1449,
+                "powerSource": "Battery",
+                "type": "EndDevice",
+                "zclVersion": 1
+            },
+            "humidity": 47.07,
+            "linkquality": 189,
+            "temperature": 24.19,
+            "voltage": 3000
+        }
+    }
+}

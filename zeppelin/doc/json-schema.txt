@@ -1,0 +1,5 @@
+JSON SCHEMA DOC
+https://json-schema.org/overview/what-is-jsonschema
+
+JSON FILE TO SCHEMA
+https://json-to-schema.itential.io/

@@ -1,0 +1,157 @@
+{
+    "$id": "https://hydroquebec.com/ireq/iot/schemas/egauge-schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "specversion": {
+            "type": "string",
+            "default": "1.0",
+            "examples": [
+                "1.0"
+            ],
+            "minLength": 3,
+            "maxLength": 3
+        },
+        "type": {
+            "type": "string",
+            "default": "ca.qc.hydro.modbus.egauge",
+            "examples": [
+                "ca.qc.hydro.modbus.egauge"
+            ],
+            "minLength": 11,
+            "maxLength": 128
+        },
+        "time": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "id": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+        },
+        "datacontenttype": {
+            "type": "string",
+            "default": "application/json; charset=utf-8",
+            "examples": [
+                "application/json; charset=utf-8"
+            ],
+            "minLength": 16,
+            "maxLength": 128
+        },
+        "subject": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 256
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "device": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 128
+                        },
+                        "class": {
+                            "type": "string",
+                            "maxLength": 128
+                        },
+                        "protocol": {
+                            "type": "string",
+                            "maxLength": 128
+                        },
+                        "uuid": {
+                            "type": "string",
+                            "format": "uuid",
+                            "maxLength": 128
+                        },
+                        "id": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 128
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "class",
+                        "protocol",
+                        "uuid",
+                        "id"
+                    ],
+                    "additionalProperties": true
+                },
+                "values": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": [
+                                    "number",
+                                    "string"
+                                ]
+                            },
+                            "value_type": {
+                                "type": "string",
+                                "minLength": 3,
+                                "maxLength": 6
+                            },
+                            "id": {
+                                "type": "string",
+                                "maxLength": 128
+                            },
+                            "address": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 40000
+                            },
+                            "name": {
+                                "type": "string",
+                                "maxLength": 128
+                            },
+                            "description": {
+                                "type": "string",
+                                "maxLength": 128
+                            },
+                            "unit": {
+                                "type": "string",
+                                "maxLength": 32
+                            }
+                        },
+                        "required": [
+                            "value",
+                            "value_type",
+                            "id",
+                            "address",
+                            "name",
+                            "unit"
+                        ],
+                        "additionalProperties": true
+                    }
+                }
+            },
+            "required": [
+                "device",
+                "values"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "specversion",
+        "type",
+        "time",
+        "id",
+        "source",
+        "datacontenttype",
+        "data"
+    ],
+    "additionalProperties": false
+}

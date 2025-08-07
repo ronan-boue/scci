@@ -1,0 +1,86 @@
+{
+    "$id": "https://hydroquebec.com/ireq/iot/schemas/egauge-schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "specversion": {
+            "type": "string",
+            "default": "1.0",
+            "examples": [
+                "1.0"
+            ],
+            "minLength": 3,
+            "maxLength": 3
+        },
+        "type": {
+            "type": "string",
+            "default": "ca.qc.hydro.zigbee2mqtt",
+            "examples": [
+                "ca.qc.hydro.zigbee2mqtt"
+            ],
+            "minLength": 11,
+            "maxLength": 128
+        },
+        "time": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "id": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+        },
+        "datacontenttype": {
+            "type": "string",
+            "default": "application/json; charset=utf-8",
+            "examples": [
+                "application/json; charset=utf-8"
+            ],
+            "minLength": 16,
+            "maxLength": 128
+        },
+        "subject": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 256
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "device": {
+                    "type": "object",
+                    "properties": {
+                        "model": {
+                            "type": "string",
+                            "minLength": 0,
+                            "maxLength": 128
+                        }
+                    },
+                    "required": [
+                        "model"
+                    ],
+                    "additionalProperties": true
+                }
+            },
+            "required": [
+                "device"
+            ],
+            "additionalProperties": true
+        }
+    },
+    "required": [
+        "specversion",
+        "type",
+        "time",
+        "id",
+        "source",
+        "datacontenttype",
+        "subject",
+        "data"
+    ],
+    "additionalProperties": false
+}

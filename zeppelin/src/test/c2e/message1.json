@@ -1,0 +1,14 @@
+{
+    "specversion": "1.0",
+    "type": "ca.qc.hydro.iot.rci.command",
+    "time": "2025-05-07T18:33:33Z",
+    "id": "1d07944a-ee4b-453a-b81f-0774b8e4f647",
+    "source": "test c2d",
+    "subject": "",
+    "datacontenttype": "application/json; charset=utf-8",
+    "dataversion": "1.1",
+    "device_id": "ubuntu-edge-jfg",
+    "data": {
+        "key": "value"
+    }
+}

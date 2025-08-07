@@ -1,0 +1,65 @@
+{
+    "devices": {
+        "SNZB-06P": [
+            {"field": "occupancy", "id": "PRESENCE", "name": "Présence", "description": "Capteur de présence", "unit": "", "value_type": "bool"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ],
+        "SNZB-02": [
+            {"field": "temperature", "id": "TEMPERATURE", "name": "Température", "description": "", "unit": "°C", "value_type": "float"},
+            {"field": "humidity", "id": "HUMIDITE", "name": "Humidité", "description": "", "unit": "%", "value_type": "float"},
+            {"field": "voltage", "id": "BATTERIE-VOLTAGE", "name": "Voltage Battery", "description": "", "unit": "mV", "value_type": "int"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ],
+        "VOCKQJK11LM":[
+            {"field": "temperature", "id": "TEMPERATURE", "name": "Température", "description": "", "unit": "°C", "value_type": "float"},
+            {"field": "humidity", "id": "HUMIDITE", "name": "Humidité", "description": "", "unit": "%", "value_type": "float"},
+            {"field": "voc", "id": "VOC", "name": "VOC", "description": "", "unit": "ppb", "value_type": "float"},
+            {"field": "air_quality", "id": "QUALITE-AIR", "name": "Qualité Air", "description": "", "unit": "", "value_type": "string"},
+            {"field": "voltage", "id": "BATTERIE-VOLTAGE", "name": "Voltage Battery", "description": "", "unit": "mV", "value_type": "int"},
+            {"field": "battery", "id": "BATTERY-CHARGE", "name": "Batterie", "description": "Charge de la batterie", "unit": "%", "value_type": "float"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ],
+        "WSDCGQ11LM":[
+            {"field": "temperature", "id": "TEMPERATURE", "name": "Température", "description": "", "unit": "°C", "value_type": "float"},
+            {"field": "humidity", "id": "HUMIDITE", "name": "Humidité", "description": "", "unit": "%", "value_type": "float"},
+            {"field": "pressure", "id": "PRESSION", "name": "Pression", "description": "", "unit": "hPa", "value_type": "float"},
+            {"field": "battery", "mandatory": false, "id": "BATTERY-CHARGE", "name": "Batterie", "description": "Charge de la batterie", "unit": "%", "value_type": "float"},
+            {"field": "power_outage_count", "mandatory": false, "id": "POWER-OUTAGE-COUNT", "name": "Compteur coupure courant", "description": "Compteur de coupure de courant", "unit": "", "value_type": "uint"},
+            {"field": "voltage", "mandatory": false, "id": "VOLTAGE", "name": "Voltage", "description": "", "unit": "V", "value_type": "float"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ],
+        "3RSP02028BZ":[
+            {"field": "ac_frequency", "id": "FREQUENCE", "name": "Fréquence", "description": "", "unit": "Hz", "value_type": "float"},
+            {"field": "power", "id": "PUISSANCE", "name": "Puissance", "description": "", "unit": "W", "value_type": "float"},
+            {"field": "power_factor", "id": "PUISSANCE-FACTEUR", "name": "Puissance Facteur", "description": "", "unit": "", "value_type": "float"},
+            {"field": "energy", "id": "ENERGIE", "name": "Énergie", "description": "", "unit": "kWh", "value_type": "float"},
+            {"field": "current", "id": "COURANT", "name": "Courant", "description": "", "unit": "A", "value_type": "float"},
+            {"field": "state", "id": "ETAT-ON-OFF", "name": "État ON/OFF", "description": "", "unit": "", "value_type": "string"},
+            {"field": "voltage", "id": "VOLTAGE", "name": "Voltage", "description": "", "unit": "V", "value_type": "float"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ],
+        "ZNCZ12LM":[
+            {"field": "power", "id": "PUISSANCE", "name": "Puissance", "description": "", "unit": "W", "value_type": "float"},
+            {"field": "energy", "id": "ENERGIE", "name": "Énergie", "description": "", "unit": "kWh", "value_type": "float"},
+            {"field": "state", "id": "ETAT-ON-OFF", "name": "État ON/OFF", "description": "", "unit": "", "value_type": "string"},
+            {"field": "device_temperature", "id": "TEMPERATURE", "name": "Température", "description": "", "unit": "°C", "value_type": "float"},
+            {"field": "voltage", "mandatory": false, "id": "VOLTAGE", "name": "Voltage", "description": "", "unit": "V", "value_type": "float"},
+            {"field": "current", "mandatory": false, "id": "COURANT", "name": "Courant", "description": "", "unit": "A", "value_type": "float"},
+            {"field": "power_outage_count", "mandatory": false, "id": "POWER-OUTAGE-COUNT", "name": "Compteur coupure courant", "description": "Compteur de coupure de courant", "unit": "", "value_type": "uint"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ],
+        "RTCGQ14LM": [
+            {"field": "occupancy", "id": "PRESENCE", "name": "Présence", "description": "Capteur de présence", "unit": "", "value_type": "bool"},
+            {"field": "detection_interval", "id": "INTERVAL-DETECTION", "name": "Interval détection", "description": "", "unit": "s", "value_type": "uint"},
+            {"field": "trigger_indicator", "id": "INDICATEUR-DECLANCHEMENT", "name": "Déclanchement", "description": "", "unit": "", "value_type": "bool"},
+            {"field": "motion_sensitivity", "id": "SENSIBILITE-DETECTION", "name": "Sensibilité", "description": "low/medium/high", "unit": "", "value_type": "string"},
+            {"field": "illuminance", "id": "LUMINOSITE", "name": "Luminosité", "description": "LUX", "unit": "lx", "value_type": "float"},
+            {"field": "power_outage_count", "id": "POWER-OUTAGE-COUNT", "name": "Compteur coupure courant", "description": "Compteur de coupure de courant", "unit": "", "value_type": "uint"},
+            {"field": "device_temperature", "id": "TEMPERATURE-CAPTEUR", "name": "Température du capteur", "description": "", "unit": "°C", "value_type": "float"},
+            {"field": "voltage", "id": "BATTERIE-VOLTAGE", "name": "Voltage Battery", "description": "", "unit": "mV", "value_type": "int"},
+            {"field": "battery", "id": "BATTERY-CHARGE", "name": "Batterie", "description": "Charge de la batterie", "unit": "%", "value_type": "float"},
+            {"field": "linkquality", "id": "LINK-QUALITY", "name": "Link Quality", "description": "", "unit": "lqi", "value_type": "uint"}
+        ]
+   },
+    "data_fields": ["id", "name", "description", "unit", "value_type"]
+}

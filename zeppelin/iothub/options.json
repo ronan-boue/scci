@@ -1,0 +1,22 @@
+{
+    "Env": [
+        "LOGGING_FILENAME=/logs/zeppelin.log",
+        "PROMETHEUS_PORT=8000"
+    ],
+    "ExposedPorts": {
+        "8000/tcp": {}
+    },
+    "HostConfig": {
+        "PortBindings": {
+            "8000/tcp": [
+                {
+                    "HostPort": "9604"
+                }
+            ]
+        },
+        "Binds": [
+            "/var/lib/data/modules/zeppelin/config:/config",
+            "/var/lib/data/modules/zeppelin/logs:/logs"
+        ]
+    }
+}

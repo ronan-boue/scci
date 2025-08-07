@@ -1,0 +1,92 @@
+{
+    "$id": "root",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "specversion": {
+        "type": "string",
+        "default": "1.0",
+        "examples": [
+          "1.0"
+        ]
+      },
+      "type": {
+        "type": "string",
+        "default": "ca.qc.hydro.ibr.gdp",
+        "examples": [
+          "ca.qc.hydro.ibr.gdp"
+        ]
+      },
+      "time": {
+        "type": "string",
+        "default": "2024-12-19T10:45:57.505883+00:00",
+        "examples": [
+          "2024-12-19T10:45:57.505883+00:00"
+        ],
+        "format": "date-time"
+      },
+      "id": {
+        "type": "string",
+        "default": "2345c252-1f6a-4534-b63f-ee8f241ea0dd",
+        "examples": [
+          "2345c252-1f6a-4534-b63f-ee8f241ea0dd"
+        ],
+        "format": "uuid"
+      },
+      "source": {
+        "type": "string",
+        "default": "fnappjqy2el2gnh2xk.azurewebsites.net",
+        "examples": [
+          "fnappjqy2el2gnh2xk.azurewebsites.net"
+        ]
+      },
+      "datacontenttype": {
+        "type": "string",
+        "default": "application/json; charset=utf-8",
+        "examples": [
+          "application/json; charset=utf-8"
+        ]
+      },
+      "dataversion": {
+        "type": "string",
+        "default": "1.0",
+        "examples": [
+          "1.0"
+        ]
+      },
+      "dest_topic": {
+        "type": "string",
+        "default": "c2d-gdp",
+        "examples": [
+          "c2d-gdp"
+        ]
+      },
+      "data": {
+        "type": "object",
+        "properties": {
+          "Fields": {
+            "type": "object",
+            "properties": {},
+            "required": [],
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "Fields"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "specversion",
+      "type",
+      "time",
+      "id",
+      "source",
+      "datacontenttype",
+      "dataversion",
+      "dest_topic",
+      "data"
+    ],
+    "additionalProperties": false
+  }

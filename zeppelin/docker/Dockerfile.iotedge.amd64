@@ -1,0 +1,31 @@
+FROM artifactory.hydro.qc.ca/dockerhub-docker-remote/python:3.12.1-slim-bullseye
+
+ENV PIP_INDEX_URL=https://artifactory.hydro.qc.ca/artifactory/api/pypi/pythonhosted-v2-pypi-remote/simple
+ENV PIP_TRUSTED_HOST=artifactory.hydro.qc.ca
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+
+RUN apt-get -y update && \
+    apt-get -y autoremove && \
+    apt-get install -y python3-pip && \
+    pip install --no-cache-dir -r /app/requirements.txt && \
+    pip cache purge && \
+    apt autoremove -y python3-pip && \
+    apt-get -y autoremove && \
+    apt-get clean && \
+    apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /root/.cache
+
+WORKDIR /config
+COPY /config ./
+RUN rm -f /config/test-zeppelin.json /config/zeppelin-mqtt.json
+
+WORKDIR /app
+COPY /src ./
+RUN rm -f /app/*.log /app/*.sh /app/test_pub.py
+RUN find /app -type d -name  "__pycache__" -exec rm -r {} +
+
+CMD ["python3", "-u", "./zeppelin.py"]
