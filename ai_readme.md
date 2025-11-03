@@ -20,446 +20,198 @@ Exemple de donnée traitée :
 PROP1 21.5 PROP2 235 PROP3 168.11 PROP4 NORMAL
 1.2. Architecture du système
 Zeppelin utilise une architecture basée sur des pipelines où chaque pipeline traite un type de données spécifique :
+## Objectif et portée
 
-Source : Point d'entrée des données (MQTT, IoT Edge, IoT Device, etc.)
+Ce document décrit l'intégration conjointe des deux projets présents dans ce dépôt : SyncIoT (dossier `synciot/`) et Zeppelin (dossier `zeppelin/`). Il explique pourquoi et comment démarrer, configurer, tester et dépanner le traitement de données de type "Serial" (lignes textuelles transmises par port série ou simulées) vers le pipeline de normalisation Zeppelin.
 
-Processeur : Logique de traitement et validation
+Public visé : équipes d'intégration/devops et développeurs qui doivent déployer ou tester l'ingestion Serial pour SCCI.
 
-Destination : Point de sortie des données normalisées
-
-Schéma JSON : Définit la structure attendue des données
-
-1.3. Installation et configuration
-1.3.1 Prérequis
-
-
-# Installation des dépendances
-pip install -r requirements.txt
-1.3.2 Structure des fichiers pour l'exemple Serial
-Nous allons créer :
-
-Un schéma JSON pour valider les données Serial
-
-Une configuration de pipeline
-
-Un processeur personnalisé (optionnel)
-
-1.4. Configuration détaillée pour données Serial
-1.4.1 Création du schéma JSON
-Fichier : config/schemas/serial-schema.json
+Remarque sur la source du code
+- Le dépôt local `synciot/` contient le projet SyncIoT.
+- Le dépôt local `zeppelin/` contient le projet Zeppelin (l'implémentation utilisée pour SCCI). Si vous recherchez les sources distantes, les liens historiques possibles sont :
+  - https://git.hydro.qc.ca/projects/RCI-I/repos/synciot (SyncIoT mirror)
+  - https://PlateformeDEV-LTE@dev.azure.com/PlateformeDEV-LTE/PEPC/_git/zeppelin (Zeppelin mirror)
 
 
+## Pourquoi installer Fiddler et SyncIoT ? (Prérequis réseau)
 
-{
-    "$id": "serial-schema",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "properties": {
-        "specversion": {
-            "type": "string",
-            "default": "1.0"
-        },
-        "type": {
-            "type": "string",
-            "default": "ca.hydroquebec.serial.data"
-        },
-        "time": {
-            "type": "string",
-            "format": "date-time"
-        },
-        "id": {
-            "type": "string",
-            "format": "uuid"
-        },
-        "source": {
-            "type": "string"
-        },
-        "datacontenttype": {
-            "type": "string",
-            "default": "application/json; charset=utf-8"
-        },
-        "data": {
-            "type": "object",
-            "properties": {
-                "PROP1": {
-                    "type": "number",
-                    "description": "Propriété numérique 1"
-                },
-                "PROP2": {
-                    "type": "integer",
-                    "description": "Propriété entière 2"
-                },
-                "PROP3": {
-                    "type": "number",
-                    "description": "Propriété numérique 3"
-                },
-                "PROP4": {
-                    "type": "string",
-                    "description": "Propriété texte 4"
-                }
-            },
-            "required": ["PROP1", "PROP2", "PROP3", "PROP4"]
-        }
-    },
-    "required": ["specversion", "type", "time", "id", "source", "data"]
-}
-1.4.2 Configuration du pipeline
-Fichier : config/zeppelin-serial.json
+- Fiddler : utile si vous rencontrez des restrictions réseau lors de l'installation de paquets Python (accès npm/pip restreint via proxy interne). Fiddler peut aider à diagnostiquer les interceptions TLS et les proxys. Installez-le uniquement si vous avez des erreurs réseau et suivez la politique de sécurité de votre entreprise.
+- SyncIoT : certaines fonctionnalités de tests et d'outils d'embarquement (scripts, exemples) se trouvent dans le projet `synciot/`. Installez ou clonez `synciot/` localement pour accéder aux scripts d'intégration et aux configurations réutilisées.
+
+Installation minimale (Python) :
+
+```powershell
+# depuis le dossier concerné (ex. zeppelin/ ou synciot/)
+python -m pip install -r requirements.txt
+```
 
 
+## Vue d'ensemble : pourquoi le type de pipeline "Serial" ?
 
-{
-    "version": "0.2",
-    "version_date": "2025-09-04",
-    "main_thread_interval_sec": 0.1,
-    "pipelines": [
-        {
-            "name": "SerialData",
-            "class": "generic",
-            "json_schema": "/config/schemas/serial-schema.json",
-            "config": "",
-            "apply_global_validation_rules": true,
-            "validation_rules": {
-                "max_prop1_value": 100.0,
-                "min_prop2_value": 0
-            },
-            "max_payload_size_bytes": 1024,
-            "thread_interval_sec": 0.1,
-            "data_types": ["ca.hydroquebec.serial.data"],
-            "source_broker": {
-                "class": "mqtt",
-                "topic": "serial/input",
-                "mqtt": {
-                    "host": "localhost",
-                    "port": 1883,
-                    "id": "zeppelin_serial_src",
-                    "keepalive": 60,
-                    "qos": 1
-                },
-                "throttle_max_message_sec": 10,
-                "throttle_sleep_sec": 1.0
-            },
-            "destination_broker": {
-                "class": "mqtt",
-                "topic": "serial/output",
-                "mqtt": {
-                    "host": "localhost",
-                    "port": 1883,
-                    "id": "zeppelin_serial_dest",
-                    "keepalive": 60,
-                    "qos": 1
-                }
-            }
-        }
-    ]
-}
-1.5. Traitement des données Serial
-1.5.1 Fonction de parsing des données Serial
-Fichier : src/utils/serial_parser.py
+Contexte : certains équipements industriels ou bancs d'essai envoient des lignes de texte via port série (ou un service série encodé sur TCP) dans un format simple clé valeur. L'objectif est d'ingérer ces lignes, de les normaliser en CloudEvent JSON et de les faire passer dans la chaîne de validation/normalisation existante de Zeppelin.
 
+Raisons du nouveau type :
+- Permet de définir un schéma JSON clair (validation statique)
+- Permet d'appliquer des règles métiers spécifiques (règles de seuil, types, valeurs autorisées)
+- Réutilise le framework de connecteurs de Zeppelin (source -> processeur -> destination)
 
+## Architecture logicielle (simplifiée)
 
-import json
-import uuid
-from datetime import datetime, timezone
-from utils.logger import get_logger, LOGGING_LEVEL
-logger = get_logger('SerialParser', LOGGING_LEVEL)
-def parse_serial_line(line: str, source_id: str = "serial-device") -> dict:
-    """
-    Parse une ligne Serial au format: PROP1 21.5 PROP2 235 PROP3 168.11 PROP4 NORMAL
-    Retourne un CloudEvent formaté
-    """
-    try:
-        parts = line.strip().split()
-        if len(parts) % 2 != 0:
-            raise ValueError(f"Nombre impair d'éléments dans la ligne: {line}")
-        # Extraction des propriétés
-        data = {}
-        for i in range(0, len(parts), 2):
-            key = parts[i]
-            value = parts[i + 1]
-            # Conversion automatique des types selon la clé
-            if key == "PROP1" or key == "PROP3":
-                data[key] = float(value)
-            elif key == "PROP2":
-                data[key] = int(value)
-            else:
-                data[key] = value
-        # Création du CloudEvent
-        cloud_event = {
-            "specversion": "1.0",
-            "type": "ca.hydroquebec.serial.data",
-            "time": datetime.now(timezone.utc).isoformat(),
-            "id": str(uuid.uuid4()),
-            "source": source_id,
-            "datacontenttype": "application/json; charset=utf-8",
-            "data": data
-        }
-        logger.debug(f"Parsed serial line: {json.dumps(cloud_event, indent=2)}")
-        return cloud_event
-    except Exception as e:
-        logger.error(f"Erreur lors du parsing de la ligne Serial '{line}': {e}")
-        raise
-def validate_serial_data(data: dict) -> bool:
-    """
-    Valide les données Serial selon des règles métier
-    """
-    try:
-        serial_data = data.get('data', {})
-        # Validation des valeurs
-        if 'PROP1' in serial_data and serial_data['PROP1'] < 0:
-            logger.warning(f"PROP1 négative détectée: {serial_data['PROP1']}")
-            return False
-        if 'PROP2' in serial_data and serial_data['PROP2'] > 1000:
-            logger.warning(f"PROP2 trop élevée détectée: {serial_data['PROP2']}")
-            return False
-        if 'PROP4' in serial_data and serial_data['PROP4'] not in ['NORMAL', 'WARNING', 'ERROR']:
-            logger.warning(f"PROP4 invalide détectée: {serial_data['PROP4']}")
-            return False
-        return True
-    except Exception as e:
-        logger.error(f"Erreur lors de la validation: {e}")
-        return False
-1.5.2 Script d'intégration principal
-Fichier : examples/serial_integration.py
+Voici un schéma texte montrant les composants et leur rôle :
 
+ZEPPELIN (processus)
+  ├─ pipelines (config/zeppelin-*.json)
+  │   ├─ source_broker (ex: mqtt, iothub, iotedge)
+  │   ├─ processors (src/processors/, ex : generic_processor.py)
+  │   └─ destination_broker
+  ├─ utils (src/utils/)  <-- comportent le parser série
+  │   └─ serial_parser.py
+  └─ prometheus / logging
 
+Flux d'une donnée Serial simulée/physique :
+  Serial device / simulator -> Serial-to-MQTT (examples/serial_integration.py) -> topic MQTT (serial/input) -> Zeppelin source (mqtt agent) -> pipeline Generic -> validation via json_schema -> destination (serial/output ou autre)
 
-#!/usr/bin/env python3
-"""
-Exemple d'intégration de Zeppelin pour traiter des données Serial
-"""
-import json
-import time
-import serial
-import paho.mqtt.client as mqtt
-from src.utils.serial_parser import parse_serial_line, validate_serial_data
+Fichiers clés et rôle
+- `zeppelin/config/zeppelin-serial.json` : exemple de pipeline Serial
+- `zeppelin/config/schemas/serial-schema.json` : schéma JSON attendu
+- `zeppelin/src/utils/serial_parser.py` : transforme une ligne Serial en CloudEvent JSON
+- `zeppelin/examples/serial_integration.py` : connecteur test/simulateur série -> publie sur MQTT
+- `synciot/` : contient outils et scripts complémentaires (si utilisés)
+
+## Schéma JSON et lien avec la config du pipeline
+
+Le schéma JSON (ex. `config/schemas/serial-schema.json`) définit la structure d'un CloudEvent attendu par le pipeline (champs `specversion`, `type`, `time`, `id`, `source`, `data`, ...). Dans la configuration du pipeline (`config/zeppelin-serial.json`) vous référencez ce schéma via la clé `json_schema`. Zeppelin valide chaque événement entrant contre ce schéma si `apply_global_validation_rules` est activé.
+
+Extrait d'intention :
+- `json_schema`: chemin relatif/absolu vers le fichier de schema
+- `data_types`: liste des types CloudEvent attendus (ex. `ca.hydroquebec.serial.data`)
+
+## src/utils/serial_parser.py — rôle et intégration
+
+But : parser une ligne au format "KEY value KEY2 value2 ..." et produire un CloudEvent JSON.
+
+Comportement principal :
+- Scinde la ligne en paires clé/valeur.
+- Convertit automatiquement certains champs (ex. `PROP1` et `PROP3` en float, `PROP2` en int).
+- Compose un objet CloudEvent avec un `id` UUID et un `time` en UTC.
+- Logge les erreurs et l'événement parse en debug.
+
+Où il s'intègre :
+- Utilisé par des scripts d'intégration (ex. `examples/serial_integration.py`) pour publier les CloudEvents sur le topic d'entrée du pipeline (`serial/input`).
+
+Règles métier/validation complémentaire
+- `validate_serial_data()` (dans le même module) applique des règles simples (ex. PROP1 >= 0, PROP2 <= 1000, PROP4 appartient à une liste autorisée). Ces règles sont complémentaires à la validation du schéma JSON.
+
+## examples/serial_integration.py — rôle
+
+Ce script est un pont (bridge) pour :
+- lire depuis un port série réel (ex. `COM3`) ou
+- simuler des lignes (mode `--test`) et
+- publier des CloudEvents JSON sur un broker MQTT (topic `serial/input`).
+
+Utilisation test (PowerShell) :
+
+```powershell
+# mode test, sans port série
+python .\examples\serial_integration.py --test
+```
+
+En production, adaptez `serial_port` et démarrez sans `--test` :
+
+```powershell
+python .\examples\serial_integration.py
+```
+
+Le script utilise `serial_parser.parse_serial_line()` pour produire l'événement, puis publie via Paho MQTT vers le broker configuré.
+
+## Démarrage de Zeppelin — containerisation vs exécution directe
+
+- Dans ces exemples, Zeppelin est souvent démarré directement en Python (ex. `python src\zeppelin.py`) pour faciliter le développement et le débogage local.
+- En production (Azure IoT, edge), on privilégiera la containerisation (images Docker fournies sous `docker/`) et les déploiements orchestrés (IoT Edge modules, Kubernetes, etc.).
+
+Pourquoi exécution directe ici ?
+- tests locaux et debugging rapide (log en console/local file)
+- facilité d'itération pour adapter le parser/les règles
+
+## Où vont les données simulées ?
+
+- Les données simulées publiées par `examples/serial_integration.py --test` sont envoyées au broker MQTT configuré (par défaut `localhost:1883`, topic `serial/input`).
+- Zeppelin (si configuré avec une source MQTT écoutant `serial/input`) va consommer ces messages, les valider, appliquer les processeurs et publier éventuellement un message de sortie sur `serial/output` ou stocker/forwarder vers la destination configurée.
+
+## Logs et surveillance
+
+Emplacement des logs :
+- Par défaut, la configuration de log se trouve dans `src/utils/logger.py`. Selon la configuration, les logs peuvent être écrits sur la console et/ou dans un fichier `logs/zeppelin.log` (si configuré).
+
+Activer le debug (exemple) :
+
+```python
 from src.utils.logger import get_logger, LOGGING_LEVEL
-logger = get_logger('SerialIntegration', LOGGING_LEVEL)
-class SerialToZeppelin:
-    def __init__(self, serial_port='COM3', baud_rate=9600, mqtt_host='localhost', mqtt_port=1883):
-        self.serial_port = serial_port
-        self.baud_rate = baud_rate
-        self.mqtt_host = mqtt_host
-        self.mqtt_port = mqtt_port
-        self.serial_connection = None
-        self.mqtt_client = None
-    def init_serial(self):
-        """Initialise la connexion série"""
-        try:
-            self.serial_connection = serial.Serial(self.serial_port, self.baud_rate, timeout=1)
-            logger.info(f"Connexion série initialisée sur {self.serial_port} à {self.baud_rate} bauds")
-            return True
-        except Exception as e:
-            logger.error(f"Erreur initialisation série: {e}")
-            return False
-    def init_mqtt(self):
-        """Initialise la connexion MQTT"""
-        try:
-            self.mqtt_client = mqtt.Client()
-            self.mqtt_client.connect(self.mqtt_host, self.mqtt_port, 60)
-            self.mqtt_client.loop_start()
-            logger.info(f"Connexion MQTT initialisée sur {self.mqtt_host}:{self.mqtt_port}")
-            return True
-        except Exception as e:
-            logger.error(f"Erreur initialisation MQTT: {e}")
-            return False
-    def process_serial_data(self):
-        """Traite les données Serial en continu"""
-        try:
-            while True:
-                if self.serial_connection.in_waiting > 0:
-                    # Lecture de la ligne série
-                    line = self.serial_connection.readline().decode('utf-8').strip()
-                    if line:
-                        logger.info(f"Ligne reçue: {line}")
-                        # Parsing de la ligne
-                        cloud_event = parse_serial_line(line, f"serial-{self.serial_port}")
-                        # Validation
-                        if validate_serial_data(cloud_event):
-                            # Envoi vers Zeppelin via MQTT
-                            self.send_to_zeppelin(cloud_event)
-                        else:
-                            logger.warning(f"Données invalides ignorées: {line}")
-                time.sleep(0.1)  # Petite pause pour éviter la surcharge CPU
-        except KeyboardInterrupt:
-            logger.info("Arrêt demandé par l'utilisateur")
-        except Exception as e:
-            logger.error(f"Erreur durant le traitement: {e}")
-    def send_to_zeppelin(self, cloud_event):
-        """Envoie les données vers Zeppelin via MQTT"""
-        try:
-            topic = "serial/input"
-            payload = json.dumps(cloud_event)
-            self.mqtt_client.publish(topic, payload)
-            logger.debug(f"Données envoyées vers Zeppelin sur le topic '{topic}'")
-        except Exception as e:
-            logger.error(f"Erreur envoi MQTT: {e}")
-    def close(self):
-        """Ferme les connexions"""
-        if self.serial_connection:
-            self.serial_connection.close()
-        if self.mqtt_client:
-            self.mqtt_client.loop_stop()
-            self.mqtt_client.disconnect()
-# Exemple d'utilisation en mode test (sans port série)
-def test_mode():
-    """Mode test sans port série physique"""
-    try:
-        # Simulation de données Serial
-        test_lines = [
-            "PROP1 21.5 PROP2 235 PROP3 168.11 PROP4 NORMAL",
-            "PROP1 25.3 PROP2 180 PROP3 172.45 PROP4 WARNING",
-            "PROP1 19.8 PROP2 290 PROP3 165.22 PROP4 NORMAL"
-        ]
-        # Initialisation MQTT
-        mqtt_client = mqtt.Client()
-        mqtt_client.connect('localhost', 1883, 60)
-        mqtt_client.loop_start()
-        for line in test_lines:
-            print(f"Traitement de: {line}")
-            # Parsing
-            cloud_event = parse_serial_line(line, "serial-test")
-            print(f"CloudEvent généré: {json.dumps(cloud_event, indent=2)}")
-            # Validation
-            if validate_serial_data(cloud_event):
-                # Envoi vers Zeppelin
-                topic = "serial/input"
-                payload = json.dumps(cloud_event)
-                mqtt_client.publish(topic, payload)
-                print(f"Envoyé vers Zeppelin sur le topic '{topic}'")
-            time.sleep(2)
-        mqtt_client.loop_stop()
-        mqtt_client.disconnect()
-    except Exception as e:
-        logger.error(f"Erreur en mode test: {e}")
-if __name__ == "__main__":
-    import sys
-    if len(sys.argv) > 1 and sys.argv[1] == "--test":
-        print("Mode test activé")
-        test_mode()
-    else:
-        # Mode production avec port série
-        integrator = SerialToZeppelin()
-        if integrator.init_serial() and integrator.init_mqtt():
-            try:
-                integrator.process_serial_data()
-            finally:
-                integrator.close()
-1.6. Démarrage et utilisation
-1.6.1 Démarrage de Zeppelin avec la configuration Serial
-
-
-# Définir le fichier de configuration
-$env:CONFIG_FILENAME = "c:\path\to\zeppelin\config\zeppelin-serial.json"
-# Démarrer Zeppelin
-cd c:\path\to\zeppelin
-python src\zeppelin.py
-1.6.2 Test avec données simulées
-
-
-# Test sans port série physique
-python examples\serial_integration.py --test
-1.6.3 Démarrage avec port série réel
-
-
-# Adapter le port série dans le script
-python examples\serial_integration.py
-1.7. Surveillance et débogage
-1.7.1 Logs
-Les logs sont configurés dans src/utils/logger.py. Pour activer le mode debug :
-
-
-
-from src.utils.logger import get_logger
 logger = get_logger('MonModule', 'DEBUG')
-1.7.2 Métriques Prometheus
-Zeppelin expose des métriques Prometheus par défaut :
+```
 
-Nombre de messages traités
+Pour suivre les logs sous PowerShell :
 
-Erreurs de validation
+```powershell
+Get-Content -Path ".\logs\zeppelin.log" -Wait
+```
 
-Performance des processeurs
+Si `logs/zeppelin.log` n'existe pas, vérifiez `src/utils/logger.py` pour la destination exacte et adaptez la configuration (chemin, rotation, niveau).
 
-Accès : <http://localhost:9090/metrics>
+## Métriques Prometheus
 
-1.7.3 Validation des données
-Vérifiez que les données respectent le schéma :
+Zeppelin expose des métriques (si activé) sur un endpoint local (ex. `http://localhost:9090/metrics`). Vérifiez la configuration Prometheus dans `src/prometheus/`.
 
+## Mosquitto et broker MQTT
 
+- Le document de test suppose un broker MQTT local (ex. Mosquitto). Mosquitto n'est pas fourni dans ce repo ; il s'agit d'un service externe à installer sur la machine de test ou à exécuter via Docker.
+- Sous Windows, vous pouvez installer Mosquitto via son installeur officiel ou exécuter un container Docker :
 
-# Voir les logs de validation
-tail -f logs/zeppelin.log | grep "validation"
-1.8. Personnalisation avancée
-1.8.1 Ajout de règles de validation personnalisées
-Modifiez le fichier de configuration zeppelin-serial.json :
+```powershell
+# Docker (exemple)
+docker run -d --name mosquitto -p 1883:1883 eclipse-mosquitto
+```
 
+Commandes utiles pour tester la connectivité MQTT (si mosquitto_pub/sub sont installés) :
 
+```powershell
+mosquitto_pub -h localhost -t "serial/input" -m '{"test":"message"}'
+mosquitto_sub -h localhost -t "serial/output"
+```
 
-"validation_rules": {
-    "max_prop1_value": 100.0,
-    "min_prop2_value": 0,
-    "allowed_prop4_values": ["NORMAL", "WARNING", "ERROR", "CRITICAL"]
-}
-1.8.2 Création d'un processeur personnalisé
-Si le processeur générique ne suffit pas, créez src/processors/serial_processor.py :
+Si mosquitto n'est pas installé localement, utilisez le client Paho MQTT (ex. `examples/serial_integration.py`) pour publier/écouter.
 
+## Dépannage (où regarder et étapes rapides)
 
+1) Erreurs d'installation pip : vérifier la connectivité réseau, proxy, ou utiliser Fiddler pour diagnostiquer.
+2) Erreurs MQTT : s'assurer que le broker est démarré et que l'hôte/port sont corrects.
+3) Erreurs de validation schema : consulter les logs (niveau DEBUG) pour voir le payload et la raison du rejet.
+4) Logs : vérifier `src/utils/logger.py` pour le chemin de sortie des logs (console/file).
 
-from .base_processor import BaseProcessor
-from utils.logger import get_logger, LOGGING_LEVEL
-logger = get_logger('SerialProcessor', LOGGING_LEVEL)
-class SerialProcessor(BaseProcessor):
-    def init(self, config, pipeline, metrics):
-        if not BaseProcessor.init(self, config, pipeline, metrics):
-            return False
-        # Initialisation spécifique au Serial
-        return True
-    def process_message(self, message):
-        # Logique de traitement spécifique
-        return BaseProcessor.process_message(self, message)
-1.9. Exemples de données
-1.9.1 Données d'entrée (Serial)
+Exemples PowerShell pour surveiller les logs :
 
+```powershell
+Get-Content -Path ".\logs\zeppelin.log" -Wait
+```
 
-PROP1 21.5 PROP2 235 PROP3 168.11 PROP4 NORMAL
-1.9.2 Données de sortie (CloudEvent normalisé)
+## Points demandés par le feedback — réponses rapides
 
+- "Quel est, et où est la demande de cette documentation ?" : Elle documente l'intégration Zeppelin pour l'ingestion Serial dans le contexte SCCI ; la demande est traitée ici pour l'équipe d'Infra IoT / SCCI.
+- "Pourquoi installer SyncIoT ?" : pour disposer des scripts d'intégration et exemples complémentaires fournis dans `synciot/` et pour reproduire l'environnement utilisé en production.
+- "Quel lien pointe vers la bonne source ?" : vérifier avec l'équipe; le repo local est source de vérité pour cette doc.
+- "Pourquoi un nouveau type de Pipeline Serial ?" : cf. section "Pourquoi le type de pipeline 'Serial' ?" ci‑dessus.
+- "Où va le parser / serial_parser.py et examples ?" : décrit en sections dédiées ci‑dessus.
+- "Pourquoi démarrer direct et pas en conteneur ?" : facilité de développement et debugging ; production → container.
+- "Où vont les logs ?" : voir `src/utils/logger.py`; par défaut console et/ou `logs/zeppelin.log` si configuré.
 
-{
-    "specversion": "1.0",
-    "type": "ca.hydroquebec.serial.data",
-    "time": "2025-09-04T14:30:00.123456+00:00",
-    "id": "12345678-1234-1234-1234-123456789abc",
-    "source": "serial-COM3",
-    "datacontenttype": "application/json; charset=utf-8",
-    "data": {
-        "PROP1": 21.5,
-        "PROP2": 235,
-        "PROP3": 168.11,
-        "PROP4": "NORMAL"
-    }
-}
-1.10. Dépannage
-1.10.1 Problèmes courants
-Erreur de validation JSON :
+## Suivi et prochaines étapes
 
-Vérifiez que le schéma correspond aux données
+- Vérifier et confirmer le lien de code officiel auprès du responsable du projet.
+- (Optionnel) Ajouter un diagramme visuel (PNG/SVG) dans `doc/` pour la documentation finale.
+- (Optionnel) Ajouter un fichier `examples/README.md` avec commandes pas-à-pas pour Windows et Docker.
 
-Consultez les logs pour les détails de l'erreur
-
-Problème MQTT :
-
-Vérifiez que le broker MQTT est démarré
-
-Testez la connectivité avec mosquitto_pub/sub
-
-1.10.2 Commandes utiles
-
-
-# Tester la connexion MQTT
-mosquitto_pub -h localhost -t "serial/input" -m '{"test": "message"}'
+---
+Résumé des changements : j'ai enrichi le document pour répondre aux points listés dans `feedback.md` : clarifications sur l'objectif, architecture, schéma, parser, exemples d'exécution (PowerShell), logs, mosquitto et notes de déploiement vs développement.
 # Écouter les messages de sortie
 mosquitto_sub -h localhost -t "serial/output"
 # Vérifier les logs Zeppelin
