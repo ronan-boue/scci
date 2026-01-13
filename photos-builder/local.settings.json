@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "BLOB_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=<your-storage-account>;AccountKey=<your-key>;EndpointSuffix=core.windows.net",
+    "BLOB_CONTAINER_NAME": "photos",
+    "ADX_CLUSTER_URI": "https://<your-cluster>.kusto.windows.net",
+    "ADX_DATABASE": "IoTData",
+    "ADX_TABLE": "Photos",
+    "ADX_CLIENT_ID": "<your-app-id>",
+    "ADX_CLIENT_SECRET": "<your-app-secret>",
+    "ADX_TENANT_ID": "<your-tenant-id>",
+    "PHOTO_TIMEOUT_MINUTES": "2"
+  }
+}
